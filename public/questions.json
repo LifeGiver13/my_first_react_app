@@ -1,17 +1,222 @@
 [
     {
         "id": 1,
-        "question": "Who is the main protagonist of 'Attack on Titan'?",
-        "answer": "Eren Yeager"
+        "question": "What is the true name of 'Zero Two' from Darling in the Franxx?",
+        "answer": "Code:002",
+        "options": [
+            "Zero Two",
+            "Ichigo",
+            "Code:002",
+            "Strelizia"
+        ]
     },
     {
         "id": 2,
-        "question": "What is the name of the village Naruto Uzumaki is from?",
-        "answer": "Konohagakure"
+        "question": "In 'Monogatari Series', what kind of oddity is attached to Hitagi Senjougahara?",
+        "answer": "Weight Crab",
+        "options": [
+            "Snail Spirit",
+            "Weight Crab",
+            "Monkey Paw",
+            "Vampire Bat"
+        ]
     },
     {
         "id": 3,
-        "question": "Which anime features a notebook that can kill people when names are written in it?",
-        "answer": "Death Note"
+        "question": "What is the name of the space pirate ship in 'Space Dandy'?",
+        "answer": "Aloha Oe",
+        "options": [
+            "Galactic Cruiser",
+            "MeowMeow V",
+            "Aloha Oe",
+            "Sunny Ship"
+        ]
+    },
+    {
+        "id": 4,
+        "question": "Which anime features a character who communicates using a notepad due to muteness?",
+        "answer": "A Silent Voice",
+        "options": [
+            "Orange",
+            "Your Lie in April",
+            "A Silent Voice",
+            "Anohana"
+        ]
+    },
+    {
+        "id": 5,
+        "question": "What is the rarest Kagune type in 'Tokyo Ghoul'?",
+        "answer": "Rinkaku",
+        "options": [
+            "Bikaku",
+            "Ukaku",
+            "Koukaku",
+            "Rinkaku"
+        ]
+    },
+    {
+        "id": 6,
+        "question": "In 'Steins;Gate', what is the nickname of Rintarou Okabe?",
+        "answer": "Hououin Kyouma",
+        "options": [
+            "Kyouma",
+            "Time Master",
+            "Hououin Kyouma",
+            "Lab Coat Messiah"
+        ]
+    },
+    {
+        "id": 7,
+        "question": "What ability does Kurapika’s Scarlet Eyes activate in 'Hunter x Hunter'?",
+        "answer": "Chain Jail Nen ability",
+        "options": [
+            "Zetsu Mode",
+            "Nen Seal",
+            "Chain Jail Nen ability",
+            "Silent Rage"
+        ]
+    },
+    {
+        "id": 8,
+        "question": "What studio animated the 2007 'Clannad' anime?",
+        "answer": "Kyoto Animation",
+        "options": [
+            "Toei Animation",
+            "Kyoto Animation",
+            "Studio DEEN",
+            "Madhouse"
+        ]
+    },
+    {
+        "id": 9,
+        "question": "In 'Paranoia Agent', what weapon does Lil' Slugger wield?",
+        "answer": "Bent golden bat",
+        "options": [
+            "Umbrella",
+            "Slingshot",
+            "Bent golden bat",
+            "Iron pipe"
+        ]
+    },
+    {
+        "id": 10,
+        "question": "Which character in 'Neon Genesis Evangelion' is a clone?",
+        "answer": "Rei Ayanami",
+        "options": [
+            "Shinji Ikari",
+            "Misato Katsuragi",
+            "Rei Ayanami",
+            "Asuka Langley"
+        ]
+    },
+    {
+        "id": 11,
+        "question": "What is the name of the girl who appears in every arc of the Monogatari Series in some form?",
+        "answer": "Mayoi Hachikuji",
+        "options": [
+            "Shinobu Oshino",
+            "Mayoi Hachikuji",
+            "Karen Araragi",
+            "Nadeko Sengoku"
+        ]
+    },
+    {
+        "id": 12,
+        "question": "What is the name of the AI system in 'Psycho-Pass' that governs society?",
+        "answer": "Sibyl System",
+        "options": [
+            "Dominator",
+            "Sibyl System",
+            "AI Watch",
+            "JusticeNet"
+        ]
+    },
+    {
+        "id": 13,
+        "question": "What is the highest recorded bounty shown in 'One Piece' so far (as of 2024)?",
+        "answer": "Gol D. Roger's 5,564,800,000 Berries",
+        "options": [
+            "Kaido's 4,611,100,000 Berries",
+            "Whitebeard's 5,046,000,000 Berries",
+            "Gol D. Roger's 5,564,800,000 Berries",
+            "Luffy's 3,000,000,000 Berries"
+        ]
+    },
+    {
+        "id": 14,
+        "question": "What is the source of power in 'Made in Abyss'?",
+        "answer": "The Curse of the Abyss",
+        "options": [
+            "Relic Stones",
+            "The Curse of the Abyss",
+            "Mana Wells",
+            "Ether Cores"
+        ]
+    },
+    {
+        "id": 15,
+        "question": "What is the name of the witch who cursed Emilia in 'Re:Zero'?",
+        "answer": "Satella",
+        "options": [
+            "Echidna",
+            "Satella",
+            "Pandora",
+            "Typhon"
+        ]
+    },
+    {
+        "id": 16,
+        "question": "In 'Erased', how does Satoru go back in time?",
+        "answer": "Revival ability",
+        "options": [
+            "Time spell",
+            "Notebook trigger",
+            "Revival ability",
+            "Accident flashback"
+        ]
+    },
+    {
+        "id": 17,
+        "question": "In 'The Tatami Galaxy', what club does the protagonist join in most timelines?",
+        "answer": "The Fortune Telling Club",
+        "options": [
+            "The Mystery Club",
+            "The Fortune Telling Club",
+            "Tennis Club",
+            "Manga Club"
+        ]
+    },
+    {
+        "id": 18,
+        "question": "What is Shou Tucker infamous for in 'Fullmetal Alchemist'?",
+        "answer": "Creating a chimera from his daughter",
+        "options": [
+            "Killing his students",
+            "Stealing Philosopher's Stones",
+            "Creating a chimera from his daughter",
+            "Turning himself into a homunculus"
+        ]
+    },
+    {
+        "id": 19,
+        "question": "In 'FLCL', what emerges from Naota’s forehead?",
+        "answer": "Giant robots",
+        "options": [
+            "Aliens",
+            "Visions",
+            "Giant robots",
+            "Bass guitars"
+        ]
+    },
+    {
+        "id": 20,
+        "question": "What is Lelouch's Geass power in 'Code Geass'?",
+        "answer": "Absolute obedience",
+        "options": [
+            "Mind reading",
+            "Time stop",
+            "Absolute obedience",
+            "Illusion casting"
+        ]
     }
 ]

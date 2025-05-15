@@ -46,9 +46,9 @@
 
 .item {
   background-color: wheat;
-  margin: 10px 550px;
+  margin: 10px 450px;
   height: 100;
-  width: 200px;
+  width: 400px;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -58,10 +58,18 @@
   padding: 10px 20px;
 }
 
+li {
+  padding: 5px;
+}
+
+.list-style {
+  list-style-type: none;
+
+}
 
 
 .body {
   margin: 10px;
   padding: 10px;
-  background-color: #888;
+  background-color: #8b5a2b;
 }

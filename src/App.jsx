@@ -35,12 +35,12 @@ export default function App() {
 
         {isLoading && <p>Loading...</p>}
         {isError && <p>Something went wrong.</p>}
-
-        {items.map((item) => (
+        {shouldFetch && <p>Please select an answer from the list of options. Each question is of 'Otaku-Level</p>}        {items.map((item) => (
           <div key={item.id}>
             <div className='item' >
               <CondensedListings item={item} />
             </div>
+
           </div>
         ))}
       </div>
