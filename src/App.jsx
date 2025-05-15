@@ -7,6 +7,7 @@ import { useQuery } from '@tanstack/react-query';
 
 export default function App() {
   const [shouldFetch, setShouldFetch] = useState(false);
+  const [score, setScore] = useState(0)
 
   const fetchItems = async () => {
     const res = await fetch('/questions.json');
@@ -20,6 +21,11 @@ export default function App() {
     enabled: shouldFetch,
     refetchOnWindowFocus: false
   });
+
+  const CountScore = () => {
+    setScore((prev) => prev + 1);
+  }
+
 
 
   return (
@@ -35,10 +41,12 @@ export default function App() {
 
         {isLoading && <p>Loading...</p>}
         {isError && <p>Something went wrong.</p>}
-        {shouldFetch && <p>Please select an answer from the list of options. Each question is of 'Otaku-Level</p>}        {items.map((item) => (
+        {shouldFetch && <p>Please select an answer from the list of options. Each question is of 'Otaku-Level <h1>Score:{score} </h1></p>}
+        {items.map((item) => (
+
           <div key={item.id}>
             <div className='item' >
-              <CondensedListings item={item} />
+              <CondensedListings item={item} onCorrect={CountScore} />
             </div>
 
           </div>
