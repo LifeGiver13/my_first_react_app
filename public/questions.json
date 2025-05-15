@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "question": "Who is the main protagonist of 'Attack on Titan'?",
+        "answer": "Eren Yeager"
+    },
+    {
+        "id": 2,
+        "question": "What is the name of the village Naruto Uzumaki is from?",
+        "answer": "Konohagakure"
+    },
+    {
+        "id": 3,
+        "question": "Which anime features a notebook that can kill people when names are written in it?",
+        "answer": "Death Note"
+    }
+]
