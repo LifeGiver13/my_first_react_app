@@ -66,11 +66,30 @@
 
 .list {
   display: flex;
-  margin: 10px 20px;
-  padding: 2px;
+  margin: 2px 80px;
+  padding: 12px;
   justify-content: space-between;
   flex-direction: row;
+  color: aliceblue;
   list-style-type: none;
+}
+
+.list li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.list li a:hover {
+  background: white;
+  color: #8b5a2b;
+}
+
+.list li a.active {
+  background: #0077cc;
+  color: white;
 }
 
 

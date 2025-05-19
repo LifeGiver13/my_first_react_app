@@ -1,14 +1,13 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query"; // assuming you're using React Query v4
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
 import { DefaultPage } from "../DefaultPage";
 import { CondensedListings } from "../components/list";
-import '../App.css';
-
-
+import '../App.css'
 
 export default function AnimeQuiz() {
-    const { id } = useParams();
+    const { id } = useParams(); // Optional param
+    const navigate = useNavigate();
     const [score, setScore] = useState(0);
 
     const fetchItems = async () => {
@@ -23,7 +22,14 @@ export default function AnimeQuiz() {
         refetchOnWindowFocus: false
     });
 
-    const currentQuestion = items.find((q) => String(q.id) === id); // id is a string
+    // Redirect to first question if no ID in URL
+    useEffect(() => {
+        if (!id && items.length > 0) {
+            navigate(`/animeQuiz/${items[0].id}`, { replace: true });
+        }
+    }, [id, items, navigate]);
+
+    const currentQuestion = items.find((q) => String(q.id) === id);
 
     const CountScore = () => {
         setScore((prev) => prev + 1);
@@ -32,8 +38,8 @@ export default function AnimeQuiz() {
     return (
         <DefaultPage>
             <h1>Anime Quiz</h1>
-            <p>Watching question ID: {id}</p>
-            {/* <h2>Score: {score}</h2> */}
+            <p>Viewing question ID: {id}</p>
+            <h2>Score: {score}</h2>
 
             {isLoading && <p>Loading...</p>}
             {isError && <p>Something went wrong.</p>}
