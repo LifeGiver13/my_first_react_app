@@ -1,57 +1,22 @@
-
-
-import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import { CondensedListings } from './components/list';
-import { useQuery } from '@tanstack/react-query';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import AnimeQuiz from './pages/AnimeQuiz';
 
 export default function App() {
-  const [shouldFetch, setShouldFetch] = useState(false);
-  const [score, setScore] = useState(0)
+  return <Router>
+    <Routes>
 
-  const fetchItems = async () => {
-    const res = await fetch('/questions.json');
-    if (!res.ok) throw new Error('Failed to fetch');
-    return res.json();
-  };
+      <Route path='/' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/contact' element={<Contact />} />
+      <Route path='/animeQuiz/:id' element={<AnimeQuiz />} />
+    </Routes>
 
-  const { data: items = [], isLoading, isError } = useQuery({
-    queryKey: ['anime-questions'],
-    queryFn: fetchItems,
-    enabled: shouldFetch,
-    refetchOnWindowFocus: false
-  });
-
-  const CountScore = () => {
-    setScore((prev) => prev + 1);
-  }
-
-
-
-  return (
-    <>
-      <div className='body'>
-        <h1>Anime Trivia</h1>
-
-        {!shouldFetch && <p>No info available</p>}
-
-        <button onClick={() => setShouldFetch(true)}>
-          Load Trivia
-        </button>
-
-        {isLoading && <p>Loading...</p>}
-        {isError && <p>Something went wrong.</p>}
-        {shouldFetch && <p>Please select an answer from the list of options. Each question is of 'Otaku-Level <h1>Score:{score} </h1></p>}
-        {items.map((item) => (
-
-          <div key={item.id}>
-            <div className='item' >
-              <CondensedListings item={item} onCorrect={CountScore} />
-            </div>
-
-          </div>
-        ))}
-      </div>
-    </>
-  );
+  </Router>;
 }
+
+
+

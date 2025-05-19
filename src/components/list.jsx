@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export function CondensedListings({ item, onCorrect }) {
     const { id, question, answer, options } = item;
@@ -21,7 +21,7 @@ export function CondensedListings({ item, onCorrect }) {
             <p>{id}. {question}</p>
             <ul className="list-style">
                 {options.map((option, index) => (
-                    <li key={index}>
+                    <li className="item" key={index}>
                         <button
                             onClick={() => handleSelect(option)}
                             disabled={selected !== null}
