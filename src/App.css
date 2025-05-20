@@ -36,9 +36,6 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
 
 .read-the-docs {
   color: #888;
@@ -47,10 +44,10 @@
 
 .list-style {
   background-color: wheat;
-  margin: 20px 450px;
   height: 100px;
   width: 400px;
   border-radius: 5px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -61,6 +58,7 @@
   height: 10px;
   padding: 5px;
 }
+
 
 
 
@@ -102,6 +100,6 @@
 
 #wrapper {
   background-color: #8b5a2b;
-  width: 170vh;
+  width: 130vh;
   height: 100vh;
 }
